@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+
+html, body {
+    font-family: 'Jost', sans-serif;
+    background: url("../images/poke_background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-weight: 600;
+    letter-spacing: -15px;
+    margin: 0;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+    white-space: pre;
+}
+
+.container {
+    margin: 0;
+    padding-left: 15rem;
+}
+
+.poke-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.poke-container img {
+    width: fit-content;
+}

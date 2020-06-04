@@ -31,11 +31,11 @@ const getPokemon = (id) => __awaiter(void 0, void 0, void 0, function* () {
 });
 const showPokemon = (pokemon) => {
     let output = `
-        <div class="card">
-            <span class="card--id">#${pokemon.id}</span>
-            <img class="card--image" src=${pokemon.image} alt=${pokemon.name} />
-            <h1 class="card--name">${pokemon.name}</h1>
-            <span class="card--details">${pokemon.type}</span>
+        <div class="poke-container col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <span>#${pokemon.id}</span>
+            <img src=${pokemon.image} alt=${pokemon.name} />
+            <h2>${pokemon.name}</h2>
+            <span>${pokemon.type}</span>
         </div>
     `;
     container.innerHTML += output;
